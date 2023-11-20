@@ -81,7 +81,7 @@ paymentOptions:{
   });
   const users = mongoose.model('user',userSchema);
   app.get('/', function (req, res) {
-    res.send('Hello i am new to node js')
+    res.send('Hello i am new to backend')
       users.find().then((data)=>{
       
         console.log(data);
